@@ -9,12 +9,17 @@ export default new Router({
     {
       path: '/',
       name: 'ledger',
-      component: Ledger
+      component: Ledger,
     },
     {
-      path: '/customer/:id',
-      name: 'customer',
-      component: () => import('./views/Customer.vue')
+      path: '/add',
+      name: 'add',
+      component: () => import('./views/Customer/Add.vue')
+    },
+    {
+      path: '/customer/edit/:id',
+      name: 'edit',
+      component: () => import('./views/Customer/Edit.vue')
     },
     {
       path: '/profile/:id',

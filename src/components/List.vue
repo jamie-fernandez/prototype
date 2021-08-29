@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     customerProfile(item) {
-      this.$router.push({ name: "customer", params: { id: item.id } });
+      this.$router.push({ name: "edit", params: { id: item.id } });
     },
   },
 };

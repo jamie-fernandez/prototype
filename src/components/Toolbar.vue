@@ -1,7 +1,7 @@
 <template>
   <div class="container w-100">
     <h3>Ledger</h3>
-    <b-button variant="success">Add Customer</b-button>
+    <b-button variant="success" @click="addCustomer">Add Customer</b-button>
     <b-form-input class="search-box" placeholder="Search Customer..." />
     <b-button>
       <b-icon icon="search" font-scale="1"></b-icon>
@@ -19,6 +19,9 @@ export default {
   methods: {
     userProfile() {
       this.$router.push({ name: "profile", params: { id: "1" } });
+    },
+    addCustomer() {
+      this.$router.push({ name: "add" });
     },
   },
 };
