@@ -15,6 +15,11 @@ export default new Router({
       path: '/customer/:id',
       name: 'customer',
       component: () => import('./views/Customer.vue')
+    },
+    {
+      path: '/profile/:id',
+      name: 'profile',
+      component: () => import('./views/Profile.vue')
     }
   ]
 })
