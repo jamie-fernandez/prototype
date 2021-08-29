@@ -11,11 +11,13 @@ export default {
     return {
       items: [
         {
+          id: "1",
           event: "IHCC Graudation 2021",
           date: "05/21/2022",
           contact: "Jamie",
         },
         {
+          id: "2",
           event: "Iowa State Graudation 2021",
           date: "05/21/2022",
           contact: "Matt",
@@ -25,7 +27,7 @@ export default {
   },
   methods: {
     customerProfile(item) {
-      console.log("route to customer view", item);
+      this.$router.push({ name: "customer", params: { id: item.id } });
     },
   },
 };

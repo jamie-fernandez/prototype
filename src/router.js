@@ -12,9 +12,9 @@ export default new Router({
       component: Ledger
     },
     {
-      path: '/customer',
+      path: '/customer/:id',
       name: 'customer',
-      component: () => import(/* webpackChunkName: "about" */ './views/Customer.vue')
+      component: () => import('./views/Customer.vue')
     }
   ]
 })
