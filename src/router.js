@@ -20,6 +20,11 @@ export default new Router({
       path: '/profile/:id',
       name: 'profile',
       component: () => import('./views/Profile.vue')
+    },
+    {
+      path: '*',
+      name: '404',
+      component: () => import('./views/404.vue')
     }
   ]
 })
