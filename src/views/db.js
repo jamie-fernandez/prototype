@@ -5,6 +5,7 @@ const adapter = new FileSync("db.json");
 const db = lowdb(adapter);
 
 db.defaults({
+    users: [],
     events: []
 }).write();
 
