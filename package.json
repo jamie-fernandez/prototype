@@ -10,6 +10,8 @@
   "dependencies": {
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
+    "lowdb": "^2.1.0",
+    "uuid": "^8.3.2",
     "vue": "^2.6.11",
     "vue-router": "^3.5.2",
     "vuex": "^3.6.2"
