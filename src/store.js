@@ -7,6 +7,7 @@ import uuid from "uuid";
 Vue.use(Vuex);
 
 const users = db.get("users");
+const events = db.get("events");
 
 export default new Vuex.Store({
     state: {
