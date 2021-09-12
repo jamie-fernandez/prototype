@@ -1,3 +1,5 @@
+// Example from https://codesandbox.io/s/38ymn0llq6
+
 import Vue from "vue";
 import Vuex from "vuex";
 import uuid from "uuid";
